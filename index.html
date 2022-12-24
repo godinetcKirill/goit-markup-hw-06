@@ -343,21 +343,38 @@
                     <use href="./image/spritik.svg#icon-clz-btn"></use>
                 </svg>
                </button>
-               
+            <p>Leave your contacts and we will call you back</p>
                <form  class="modal-form">
                 <label  class="modal-form-field">
-                    <p >Leave your contacts and we will call you back</p>
+                
                     <span class="modal-form-desc">Name</span>
-                    <input type="text" name="user_name" class="modal-form-input" required  pattern="[a-zA-Z]+"
+                    <span class="modal-form-wrapper">
+                        <input type="text" name="user_name" class="modal-form-input" required  pattern="[a-zA-Z]+"
                     minlength="2">
+                    <svg class="modal-form-icon" width="12" height="12">
+                        <use href="./image/spritik.svg#icon-person-black-18dp-1"></use>
+                    </svg>
+                    </span>
+                    
                 </label>
                 <label class="modal-form-field">
                     <span class="modal-form-desc">Phone</span>
-                    <input type="tel" name="user_phone" class="modal-form-input" required  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" >
+                   <span class="modal-form-wrapper">
+                    <input type="tel" name="user_phone" class="modal-form-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                        title="xxx-xxx-xx-xx">
+                    <svg class="modal-form-icon" width="13" height="13">
+                        <use href="./image/spritik.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                   </span>
                 </label>
                 <label class="modal-form-field">
                     <span class="modal-form-desc">Email</span>
-                    <input type="email" name="user_email" class="modal-form-input" required title="gbgdg@gmail.com">
+                    <span class="modal-form-wrapper">
+                        <input type="email" name="user_email" class="modal-form-input" required title="gbgdg@gmail.com">
+                        <svg class="modal-form-icon" width="15" height="12">
+                            <use href="./image/spritik.svg#icon-email-black-18dp-1"></use>
+                        </svg>
+                    </span>
                 </label>
                 <label class="modal-form-field">
                     <span class="modal-form-desc">Comment</span>
