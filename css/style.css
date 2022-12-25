@@ -747,9 +747,10 @@ font-family: 'Roboto' serif;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
-    height: 579px;
+    height: 100%;
+    
     background-color: #FCFCFC;
-    padding: 24px;
+    padding:  72px 24px;
    
     
     
@@ -827,6 +828,7 @@ fill: #9747FF;
     position:relative;
 }
 .modal-form-icon{
+
     position: absolute;
     top: 50%;
     left: 12px;
@@ -834,4 +836,76 @@ fill: #9747FF;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.modal-form-comment{
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+.modal-form-comment::placeholder{
+    font-size: 12px;
+    color: rgba(117, 117, 117, 0.5);
+}
+.modal-form-comment:focus{
+    border-color: var(--accent-color);
+        outline: none;
+}
+.modal-form-check-desc::before{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid var(--title-text-color);
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+       
+}
+.modal-form-check-desc{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    color: #757575;
+}
+.modal-form-check:checked +.modal-form-check-desc::before{
+    background-position: center;
+    background-image: url(../image/click-modal.svg);
     
+}
+        .modal-form-check:focus+.modal-form-check-desc::before{
+            border-color: var(--accent-color);
+
+        }
+        .policy-text{
+            color: var(--accent-color);
+        
+        }
+                .text-contact {
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 16px;
+                }
+
+                .modal-for-submit {
+                    display: inline-block;
+                    min-width: 170px;
+                    align-self: center;
+        
+                    border-radius: 4px;
+                    padding: 16px 32px;
+                    font-family: Roboto, serif;
+                    font-size: 16px;
+                    color: var(--primary-white-color);
+                    background-color: var(--accent-color);
+                    cursor: pointer;
+                    align-items: center;
+                    border: 1px solid transparent;
+                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+                }
+        
+                .modal-for-submit:hover,
+                .modal-for-submit:focus {
+                    background-color: var(--button-bg-color);}
