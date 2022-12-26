@@ -691,6 +691,100 @@ font-family: 'Roboto' serif;
     max-width: 264px;
     color: #E7E9FC;
 }
+
+
+/* форма футеру */
+
+.footer-form{
+    display: flex;
+    align-items: center;
+}
+ .footer-active{
+    
+ }
+ .footer-sub-btn{
+    
+ }
+ .footer-icon{
+    margin-left: 16px;
+   
+ }
+ .footer-btn-desc{
+    
+    
+    
+        width: 80px;
+        height: 24px;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    
+        color: #FFFFFF;
+ }
+
+ .modal-foot-action{
+    margin-left: 80px;
+ }
+
+
+ .footer-input-descript{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 16px;
+     
+    
+        letter-spacing: 0.02em;
+    
+        color: #FFFFFF;
+ }
+ .footer-input{
+    padding-left: 16px;
+   
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+        outline: none;
+ }
+ .footer-btn{
+    width: 168px;
+    height: 40px;
+    padding: 8px,
+        24px,
+        8px,
+        24px;
+    margin-left: 24px;
+    color: #FFFF;
+    background-color: var(--accent-color);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+ }
+
+ 
+
+ .footer-btn:hover,
+ .footer-btn:focus{
+    background-color: var(--button-bg-color);
+ }
+ 
+
+ 
  
 /* Overlay */
 .overlay{
